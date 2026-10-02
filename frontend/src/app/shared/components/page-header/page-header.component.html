@@ -1,0 +1,11 @@
+<header class="page-header">
+  <div>
+    <span class="eyebrow" *ngIf="eyebrow">{{ eyebrow }}</span>
+    <h1>{{ title }}</h1>
+    <p *ngIf="description">{{ description }}</p>
+  </div>
+
+  <button class="primary-action" type="button" *ngIf="actionLabel" (click)="actionClick.emit()">
+    {{ actionLabel }}
+  </button>
+</header>

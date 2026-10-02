@@ -1,0 +1,8 @@
+<section class="empty-state" aria-live="polite">
+  <div class="empty-icon" aria-hidden="true">—</div>
+  <h2>{{ title }}</h2>
+  <p>{{ description }}</p>
+  <button class="secondary-action" type="button" *ngIf="actionLabel" (click)="actionClick.emit()">
+    {{ actionLabel }}
+  </button>
+</section>
