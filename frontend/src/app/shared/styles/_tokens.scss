@@ -1,0 +1,99 @@
+// Design Tokens: single source of truth for the frontend visual language.
+
+$color-primary: #0b8f83;
+$color-primary-dark: #087268;
+$color-primary-soft: #e5f8f4;
+$color-secondary: #0b1f33;
+$color-accent: #e5a83b;
+$color-success: #16836f;
+$color-warning: #a67621;
+$color-danger: #c35d51;
+$color-info: #4271a7;
+$color-ink: #172c3e;
+$color-muted: #748696;
+$color-placeholder: #9aabb7;
+$color-line: #e3ebf0;
+$color-surface: #ffffff;
+$color-canvas: #f5f8fa;
+
+$font-family-base: Inter, 'Noto Sans Thai', system-ui, sans-serif;
+$font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+$font-size-xs: 0.6875rem;
+$font-size-sm: 0.8125rem;
+$font-size-md: 0.875rem;
+$font-size-lg: 1rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.75rem;
+
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.25rem;
+$space-6: 1.5rem;
+$space-8: 2rem;
+$space-10: 2.5rem;
+$space-12: 3rem;
+
+$radius-sm: 0.375rem;
+$radius-md: 0.625rem;
+$radius-lg: 0.875rem;
+$radius-xl: 1.25rem;
+$radius-pill: 999px;
+
+$shadow-sm: 0 1px 3px rgba(20, 57, 80, 0.08);
+$shadow-md: 0 8px 24px rgba(20, 57, 80, 0.08);
+$shadow-lg: 0 16px 40px rgba(20, 57, 80, 0.12);
+
+$transition-fast: 150ms ease;
+$transition-base: 220ms ease;
+
+:root {
+  --color-primary: #{$color-primary};
+  --color-primary-dark: #{$color-primary-dark};
+  --color-primary-soft: #{$color-primary-soft};
+  --color-secondary: #{$color-secondary};
+  --color-accent: #{$color-accent};
+  --color-success: #{$color-success};
+  --color-warning: #{$color-warning};
+  --color-danger: #{$color-danger};
+  --color-info: #{$color-info};
+  --color-ink: #{$color-ink};
+  --color-muted: #{$color-muted};
+  --color-placeholder: #{$color-placeholder};
+  --color-line: #{$color-line};
+  --color-surface: #{$color-surface};
+  --color-canvas: #{$color-canvas};
+
+  --font-family-base: #{$font-family-base};
+  --font-family-mono: #{$font-family-mono};
+  --font-size-xs: #{$font-size-xs};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-md: #{$font-size-md};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-2xl: #{$font-size-2xl};
+
+  --space-1: #{$space-1};
+  --space-2: #{$space-2};
+  --space-3: #{$space-3};
+  --space-4: #{$space-4};
+  --space-5: #{$space-5};
+  --space-6: #{$space-6};
+  --space-8: #{$space-8};
+  --space-10: #{$space-10};
+  --space-12: #{$space-12};
+
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-xl: #{$radius-xl};
+  --radius-pill: #{$radius-pill};
+
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+
+  --transition-fast: #{$transition-fast};
+  --transition-base: #{$transition-base};
+}
