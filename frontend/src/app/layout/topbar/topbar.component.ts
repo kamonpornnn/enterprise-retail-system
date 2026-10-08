@@ -1,4 +1,11 @@
-import { Component, ElementRef, EventEmitter, HostListener, Input, Output } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  HostListener,
+  Input,
+  Output,
+} from '@angular/core';
 import Swal from 'sweetalert2';
 import { LanguageService } from '../../core/services/language.service';
 import { ThemeService } from '../../core/services/theme.service';

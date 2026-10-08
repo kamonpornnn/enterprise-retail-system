@@ -26,16 +26,30 @@
       type="button"
       mat-icon-button
       class="theme-switch"
-      [attr.aria-label]="languageService.t(themeService.current === 'light' ? 'theme.switchToDark' : 'theme.switchToLight')"
+      [attr.aria-label]="
+        languageService.t(
+          themeService.current === 'light'
+            ? 'theme.switchToDark'
+            : 'theme.switchToLight'
+        )
+      "
       (click)="toggleTheme()"
     >
-      <mat-icon>{{ themeService.current === 'light' ? 'dark_mode' : 'light_mode' }}</mat-icon>
+      <mat-icon>{{
+        themeService.current === 'light' ? 'dark_mode' : 'light_mode'
+      }}</mat-icon>
     </button>
     <button
       mat-stroked-button
       type="button"
       class="language-switch"
-      [attr.aria-label]="languageService.t(languageService.current === 'th' ? 'language.switchToEnglish' : 'language.switchToThai')"
+      [attr.aria-label]="
+        languageService.t(
+          languageService.current === 'th'
+            ? 'language.switchToEnglish'
+            : 'language.switchToThai'
+        )
+      "
       (click)="toggleLanguage()"
     >
       {{ languageService.current === 'th' ? 'EN' : 'TH' }}
@@ -55,8 +69,12 @@
           <span class="profile-avatar profile-avatar-compact">
             {{ languageService.current === 'th' ? 'พพ' : 'PP' }}
           </span>
-          <span class="profile-name">{{ languageService.current === 'th' ? 'พรพิมล' : 'Pornpimon' }}</span>
-          <mat-icon class="profile-arrow" [class.open]="isProfileMenuOpen">keyboard_arrow_down</mat-icon>
+          <span class="profile-name">{{
+            languageService.current === 'th' ? 'พรพิมล' : 'Pornpimon'
+          }}</span>
+          <mat-icon class="profile-arrow" [class.open]="isProfileMenuOpen"
+            >keyboard_arrow_down</mat-icon
+          >
         </span>
       </button>
 
@@ -66,7 +84,9 @@
             {{ languageService.current === 'th' ? 'พพ' : 'PP' }}
           </span>
           <div class="profile-menu-identity">
-            <strong>{{ languageService.current === 'th' ? 'พรพิมล' : 'Pornpimon' }}</strong>
+            <strong>{{
+              languageService.current === 'th' ? 'พรพิมล' : 'Pornpimon'
+            }}</strong>
             <small>{{ languageService.t('topbar.role') }}</small>
             <span class="profile-online">
               <span class="profile-status"></span>
@@ -76,14 +96,17 @@
         </div>
         <mat-divider></mat-divider>
         <button mat-menu-item (click)="openUserAccount()">
-          <mat-icon>manage_accounts</mat-icon><span>{{ languageService.t('topbar.account') }}</span>
+          <mat-icon>manage_accounts</mat-icon
+          ><span>{{ languageService.t('topbar.account') }}</span>
         </button>
         <button mat-menu-item (click)="openSettings()">
-          <mat-icon>settings</mat-icon><span>{{ languageService.t('topbar.settings') }}</span>
+          <mat-icon>settings</mat-icon
+          ><span>{{ languageService.t('topbar.settings') }}</span>
         </button>
         <mat-divider></mat-divider>
         <button mat-menu-item class="logout-item" (click)="logout()">
-          <mat-icon>logout</mat-icon><span>{{ languageService.t('topbar.logout') }}</span>
+          <mat-icon>logout</mat-icon
+          ><span>{{ languageService.t('topbar.logout') }}</span>
         </button>
       </mat-menu>
     </div>

@@ -8,7 +8,12 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
-  declarations: [AppShellComponent, SidebarComponent, TopbarComponent, FooterComponent],
+  declarations: [
+    AppShellComponent,
+    SidebarComponent,
+    TopbarComponent,
+    FooterComponent,
+  ],
   imports: [CommonModule, SharedModule],
   exports: [AppShellComponent],
 })

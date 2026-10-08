@@ -5,7 +5,13 @@
     <p *ngIf="description">{{ description }}</p>
   </div>
 
-  <button mat-flat-button color="primary" type="button" *ngIf="actionLabel" (click)="actionClick.emit()">
+  <button
+    mat-flat-button
+    color="primary"
+    type="button"
+    *ngIf="actionLabel"
+    (click)="actionClick.emit()"
+  >
     <mat-icon>play_arrow</mat-icon>
     {{ actionLabel }}
   </button>

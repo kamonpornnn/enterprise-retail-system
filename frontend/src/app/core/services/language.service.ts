@@ -53,7 +53,10 @@ export type TranslationKey =
 export class LanguageService {
   current: Language = 'th';
 
-  private readonly translations: Record<Language, Record<TranslationKey, string>> = {
+  private readonly translations: Record<
+    Language,
+    Record<TranslationKey, string>
+  > = {
     th: {
       'navigation.dashboard': 'แดชบอร์ด',
       'navigation.users': 'ผู้ใช้งาน',
@@ -81,7 +84,8 @@ export class LanguageService {
       'theme.switchToLight': 'เปิดโหมดสว่าง',
       'page.eyebrow': 'SHELFLOW / APP SHELL',
       'page.title': 'App Shell พร้อมใช้งาน',
-      'page.description': 'โครงหน้าหลักประกอบด้วย Sidebar, Topbar และพื้นที่เนื้อหา',
+      'page.description':
+        'โครงหน้าหลักประกอบด้วย Sidebar, Topbar และพื้นที่เนื้อหา',
       'page.exampleAction': 'ตัวอย่างการทำงาน',
       'card.status': 'สถานะ',
       'card.loading': 'กำลังโหลด',
@@ -89,11 +93,13 @@ export class LanguageService {
       'status.active': 'ใช้งานอยู่',
       'loading.sample': 'กำลังโหลดตัวอย่าง...',
       'empty.title': 'ยังไม่มีรายการ',
-      'empty.description': 'พื้นที่นี้พร้อมสำหรับ Feature ที่จะพัฒนาใน Phase ถัดไป',
+      'empty.description':
+        'พื้นที่นี้พร้อมสำหรับ Feature ที่จะพัฒนาใน Phase ถัดไป',
       'empty.action': 'สร้างรายการ',
       'footer.version': 'เวอร์ชัน 0.1.0',
       'alert.accountTitle': 'บัญชีผู้ใช้',
-      'alert.accountText': 'ส่วนจัดการข้อมูลบัญชีผู้ใช้จะพร้อมใช้งานในขั้นตอนถัดไป',
+      'alert.accountText':
+        'ส่วนจัดการข้อมูลบัญชีผู้ใช้จะพร้อมใช้งานในขั้นตอนถัดไป',
       'alert.settingsTitle': 'ตั้งค่าระบบ',
       'alert.settingsText': 'ส่วนตั้งค่าระบบจะพร้อมใช้งานในขั้นตอนถัดไป',
       'alert.logoutTitle': 'ออกจากระบบ?',
@@ -128,7 +134,8 @@ export class LanguageService {
       'theme.switchToLight': 'Switch to light mode',
       'page.eyebrow': 'SHELFLOW / APP SHELL',
       'page.title': 'App Shell is ready',
-      'page.description': 'The main layout includes a Sidebar, Topbar and content area',
+      'page.description':
+        'The main layout includes a Sidebar, Topbar and content area',
       'page.exampleAction': 'Try interaction',
       'card.status': 'Status',
       'card.loading': 'Loading',
@@ -140,9 +147,11 @@ export class LanguageService {
       'empty.action': 'Create item',
       'footer.version': 'Version 0.1.0',
       'alert.accountTitle': 'User account',
-      'alert.accountText': 'Account management will be available in the next phase',
+      'alert.accountText':
+        'Account management will be available in the next phase',
       'alert.settingsTitle': 'System settings',
-      'alert.settingsText': 'System settings will be available in the next phase',
+      'alert.settingsText':
+        'System settings will be available in the next phase',
       'alert.logoutTitle': 'Sign out?',
       'alert.logoutText': 'Do you want to sign out of ShelfFlow?',
       'alert.confirm': 'Got it',

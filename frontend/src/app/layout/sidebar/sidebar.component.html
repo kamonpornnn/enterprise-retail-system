@@ -10,7 +10,9 @@
       type="button"
       class="nav-toggle"
       color="primary"
-      [attr.aria-label]="languageService.t(collapsed ? 'sidebar.expand' : 'sidebar.collapse')"
+      [attr.aria-label]="
+        languageService.t(collapsed ? 'sidebar.expand' : 'sidebar.collapse')
+      "
       (click)="toggle.emit()"
     >
       <mat-icon>{{ collapsed ? 'menu' : 'menu_open' }}</mat-icon>
@@ -26,7 +28,9 @@
   </div>
 
   <nav mat-nav-list [attr.aria-label]="languageService.t('navigation.title')">
-    <div mat-subheader class="nav-title">{{ languageService.t('navigation.title') }}</div>
+    <div mat-subheader class="nav-title">
+      {{ languageService.t('navigation.title') }}
+    </div>
     <button
       mat-list-item
       class="nav-item"

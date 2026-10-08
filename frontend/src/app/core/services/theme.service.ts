@@ -21,7 +21,10 @@ export class ThemeService {
 
   private applyTheme(): void {
     if (typeof document !== 'undefined') {
-      document.documentElement.classList.toggle('dark-mode', this.current === 'dark');
+      document.documentElement.classList.toggle(
+        'dark-mode',
+        this.current === 'dark',
+      );
     }
     if (typeof window !== 'undefined') {
       window.localStorage.setItem('shelfflow-theme', this.current);

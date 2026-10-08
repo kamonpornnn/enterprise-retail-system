@@ -8,8 +8,18 @@ import { ScreenPlaceholderComponent } from './pages/screen-placeholder/screen-pl
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
-  declarations: [AppComponent, DashboardPageComponent, ScreenPlaceholderComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, SharedModule, LayoutModule],
+  declarations: [
+    AppComponent,
+    DashboardPageComponent,
+    ScreenPlaceholderComponent,
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    SharedModule,
+    LayoutModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

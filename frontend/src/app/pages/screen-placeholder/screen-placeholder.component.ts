@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { LanguageService, TranslationKey } from '../../core/services/language.service';
+import {
+  LanguageService,
+  TranslationKey,
+} from '../../core/services/language.service';
 
 @Component({
   selector: 'app-screen-placeholder',
@@ -22,6 +25,8 @@ export class ScreenPlaceholderComponent {
   }
 
   get screenTitle(): string {
-    return this.labelKey ? this.languageService.t(this.labelKey) : this.title || this.screenCode;
+    return this.labelKey
+      ? this.languageService.t(this.labelKey)
+      : this.title || this.screenCode;
   }
 }

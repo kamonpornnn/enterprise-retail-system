@@ -13,7 +13,9 @@ body {
   min-height: 100%;
   margin: 0;
   background: var(--color-canvas);
-  transition: background-color var(--transition-base), color var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 body {
@@ -32,7 +34,9 @@ body {
 .dark-mode .mat-mdc-menu-content {
   background: var(--color-surface) !important;
   color: var(--color-ink) !important;
-  transition: background-color var(--transition-base), color var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base);
 }
 
 .dark-mode .mat-mdc-card-subtitle,

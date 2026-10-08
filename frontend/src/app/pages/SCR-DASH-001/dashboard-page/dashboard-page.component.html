@@ -8,21 +8,38 @@
 
   <section class="component-grid">
     <mat-card class="component-card">
-      <mat-card-header><mat-card-title>{{ languageService.t('card.status') }}</mat-card-title></mat-card-header>
+      <mat-card-header
+        ><mat-card-title>{{
+          languageService.t('card.status')
+        }}</mat-card-title></mat-card-header
+      >
       <mat-card-content>
-        <app-status-badge [label]="languageService.t('status.active')" tone="success"></app-status-badge>
+        <app-status-badge
+          [label]="languageService.t('status.active')"
+          tone="success"
+        ></app-status-badge>
       </mat-card-content>
     </mat-card>
 
     <mat-card class="component-card">
-      <mat-card-header><mat-card-title>{{ languageService.t('card.loading') }}</mat-card-title></mat-card-header>
+      <mat-card-header
+        ><mat-card-title>{{
+          languageService.t('card.loading')
+        }}</mat-card-title></mat-card-header
+      >
       <mat-card-content>
-        <app-loading-state [label]="languageService.t('loading.sample')"></app-loading-state>
+        <app-loading-state
+          [label]="languageService.t('loading.sample')"
+        ></app-loading-state>
       </mat-card-content>
     </mat-card>
 
     <mat-card class="component-card component-card-wide">
-      <mat-card-header><mat-card-title>{{ languageService.t('card.empty') }}</mat-card-title></mat-card-header>
+      <mat-card-header
+        ><mat-card-title>{{
+          languageService.t('card.empty')
+        }}</mat-card-title></mat-card-header
+      >
       <mat-card-content>
         <app-empty-state
           [title]="languageService.t('empty.title')"

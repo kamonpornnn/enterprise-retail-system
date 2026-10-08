@@ -68,7 +68,9 @@
   color: var(--color-ink);
   font-size: var(--font-size-sm);
   font-weight: 600;
-  transition: background var(--transition-fast), box-shadow var(--transition-fast);
+  transition:
+    background var(--transition-fast),
+    box-shadow var(--transition-fast);
 }
 
 .profile-trigger-content {
@@ -90,7 +92,11 @@
   justify-content: center;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
   color: #fff;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -115,7 +121,9 @@
   margin-left: 0.125rem;
   color: var(--color-muted);
   font-size: 1.25rem;
-  transition: transform var(--transition-fast), color var(--transition-fast);
+  transition:
+    transform var(--transition-fast),
+    color var(--transition-fast);
 }
 
 .profile-chip .profile-arrow {
@@ -152,7 +160,11 @@
   gap: var(--space-3);
   min-height: 5rem;
   padding: var(--space-4);
-  background: linear-gradient(135deg, var(--color-primary-soft), var(--color-surface-raised));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary-soft),
+    var(--color-surface-raised)
+  );
 }
 
 .profile-menu-identity {
