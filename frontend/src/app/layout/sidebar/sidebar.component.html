@@ -32,7 +32,8 @@
       class="nav-item"
       type="button"
       *ngFor="let item of navigationItems"
-      (click)="itemSelected.emit(item)"
+      [class.active]="router.url === item.path"
+      (click)="navigate(item)"
     >
       <mat-icon matListItemIcon class="nav-icon">{{ item.icon }}</mat-icon>
       <span matListItemTitle>{{ languageService.t(item.labelKey) }}</span>

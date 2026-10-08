@@ -1,37 +1,3 @@
 <app-shell>
-  <section class="scaffold-page">
-    <app-page-header
-      [eyebrow]="languageService.t('page.eyebrow')"
-      [title]="languageService.t('page.title')"
-      [description]="languageService.t('page.description')"
-      [actionLabel]="languageService.t('page.exampleAction')"
-    ></app-page-header>
-
-    <section class="component-grid">
-      <mat-card class="component-card">
-        <mat-card-header><mat-card-title>{{ languageService.t('card.status') }}</mat-card-title></mat-card-header>
-        <mat-card-content>
-        <app-status-badge [label]="languageService.t('status.active')" tone="success"></app-status-badge>
-        </mat-card-content>
-      </mat-card>
-
-      <mat-card class="component-card">
-        <mat-card-header><mat-card-title>{{ languageService.t('card.loading') }}</mat-card-title></mat-card-header>
-        <mat-card-content>
-        <app-loading-state [label]="languageService.t('loading.sample')"></app-loading-state>
-        </mat-card-content>
-      </mat-card>
-
-      <mat-card class="component-card component-card-wide">
-        <mat-card-header><mat-card-title>{{ languageService.t('card.empty') }}</mat-card-title></mat-card-header>
-        <mat-card-content>
-        <app-empty-state
-          [title]="languageService.t('empty.title')"
-          [description]="languageService.t('empty.description')"
-          [actionLabel]="languageService.t('empty.action')"
-        ></app-empty-state>
-        </mat-card-content>
-      </mat-card>
-    </section>
-  </section>
+  <router-outlet></router-outlet>
 </app-shell>

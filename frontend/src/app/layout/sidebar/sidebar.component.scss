@@ -167,6 +167,11 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
+.nav-item.active {
+  background: rgba(21, 184, 166, 0.16);
+  box-shadow: inset 3px 0 0 var(--color-primary);
+}
+
 .sidebar.collapsed .nav-item {
   justify-content: center;
   min-width: 0;
