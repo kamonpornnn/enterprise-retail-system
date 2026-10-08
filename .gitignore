@@ -1,0 +1,156 @@
+# ============================================================
+# .NET / C# / Visual Studio
+# ============================================================
+
+# Build output
+**/bin/
+**/obj/
+
+# Visual Studio user-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Visual Studio cache / generated files
+.vs/
+*.rsuser
+
+# Test results / coverage
+**/TestResults/
+**/coverage/
+
+# Publish output
+**/publish/
+
+
+# ============================================================
+# .NET Development Tools / IDE
+# ============================================================
+
+# JetBrains Rider / ReSharper
+.idea/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+# ============================================================
+# Angular / Node.js
+# ============================================================
+
+# Node dependencies
+**/node_modules/
+
+# Angular build output
+**/dist/
+.angular/
+
+# Angular cache
+**/.angular/cache/
+
+# TypeScript build output
+**/out-tsc/
+
+# npm / Yarn / pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager temporary files
+.npm/
+.yarn/
+
+
+# ============================================================
+# Environment / Secrets
+# ============================================================
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Local configuration / secrets
+*.local
+*.secret
+
+
+# ============================================================
+# OS Generated Files
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+
+# ============================================================
+# Logs / Temporary Files
+# ============================================================
+
+*.log
+*.tmp
+*.temp
+
+# Temporary folders
+tmp/
+temp/
+
+
+# ============================================================
+# Coverage / Test / Tool Output
+# ============================================================
+
+coverage/
+.nyc_output/
+test-results/
+
+# Karma / Test tooling
+testem.log
+
+
+# ============================================================
+# Database / Local Development
+# ============================================================
+
+# Local SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Local database backups
+*.bak
+
+
+# ============================================================
+# Generated / Local Development Files
+# ============================================================
+
+# Local certificates / keys
+*.pfx
+*.p12
+
+# Generated documentation / reports
+reports/
+
+# Local uploads / generated files
+uploads/
