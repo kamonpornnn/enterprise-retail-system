@@ -1,0 +1,91 @@
+<mat-toolbar class="topbar">
+  <div class="breadcrumb">
+    <span>{{ brandName }}</span>
+    <span aria-hidden="true">›</span>
+    <strong>{{ languageService.t('topbar.overview') }}</strong>
+  </div>
+
+  <div class="topbar-actions">
+    <button
+      mat-icon-button
+      type="button"
+      [attr.aria-label]="languageService.t('topbar.search')"
+      (click)="searchClick.emit()"
+    >
+      <mat-icon>search</mat-icon>
+    </button>
+    <button
+      type="button"
+      mat-icon-button
+      [attr.aria-label]="languageService.t('topbar.notifications')"
+      (click)="notificationClick.emit()"
+    >
+      <mat-icon>notifications_none</mat-icon>
+    </button>
+    <button
+      type="button"
+      mat-icon-button
+      class="theme-switch"
+      [attr.aria-label]="languageService.t(themeService.current === 'light' ? 'theme.switchToDark' : 'theme.switchToLight')"
+      (click)="toggleTheme()"
+    >
+      <mat-icon>{{ themeService.current === 'light' ? 'dark_mode' : 'light_mode' }}</mat-icon>
+    </button>
+    <button
+      mat-stroked-button
+      type="button"
+      class="language-switch"
+      [attr.aria-label]="languageService.t(languageService.current === 'th' ? 'language.switchToEnglish' : 'language.switchToThai')"
+      (click)="toggleLanguage()"
+    >
+      {{ languageService.current === 'th' ? 'EN' : 'TH' }}
+    </button>
+    <div class="profile-menu">
+      <button
+        mat-button
+        type="button"
+        class="profile-chip"
+        [matMenuTriggerFor]="profileMenu"
+        [attr.aria-label]="languageService.t('topbar.accountMenu')"
+        [attr.aria-expanded]="isProfileMenuOpen"
+        (menuOpened)="isProfileMenuOpen = true"
+        (menuClosed)="isProfileMenuOpen = false"
+      >
+        <span class="profile-trigger-content">
+          <span class="profile-avatar profile-avatar-compact">
+            {{ languageService.current === 'th' ? 'พพ' : 'PP' }}
+          </span>
+          <span class="profile-name">{{ languageService.current === 'th' ? 'พรพิมล' : 'Pornpimon' }}</span>
+          <mat-icon class="profile-arrow" [class.open]="isProfileMenuOpen">keyboard_arrow_down</mat-icon>
+        </span>
+      </button>
+
+      <mat-menu #profileMenu="matMenu" class="profile-menu-panel">
+        <div class="profile-menu-header">
+          <span class="profile-avatar profile-avatar-large">
+            {{ languageService.current === 'th' ? 'พพ' : 'PP' }}
+          </span>
+          <div class="profile-menu-identity">
+            <strong>{{ languageService.current === 'th' ? 'พรพิมล' : 'Pornpimon' }}</strong>
+            <small>{{ languageService.t('topbar.role') }}</small>
+            <span class="profile-online">
+              <span class="profile-status"></span>
+              {{ languageService.t('topbar.online') }}
+            </span>
+          </div>
+        </div>
+        <mat-divider></mat-divider>
+        <button mat-menu-item (click)="openUserAccount()">
+          <mat-icon>manage_accounts</mat-icon><span>{{ languageService.t('topbar.account') }}</span>
+        </button>
+        <button mat-menu-item (click)="openSettings()">
+          <mat-icon>settings</mat-icon><span>{{ languageService.t('topbar.settings') }}</span>
+        </button>
+        <mat-divider></mat-divider>
+        <button mat-menu-item class="logout-item" (click)="logout()">
+          <mat-icon>logout</mat-icon><span>{{ languageService.t('topbar.logout') }}</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>

@@ -23,16 +23,16 @@
 }
 
 .warning {
-  background: #fff6de;
+  background: var(--color-warning-soft);
   color: var(--color-warning);
 }
 
 .danger {
-  background: #fff0ed;
+  background: var(--color-danger-soft);
   color: var(--color-danger);
 }
 
 .info {
-  background: #eaf3ff;
+  background: var(--color-info-soft);
   color: var(--color-info);
 }

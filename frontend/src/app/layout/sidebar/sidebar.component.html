@@ -1,0 +1,49 @@
+<aside class="sidebar" [class.collapsed]="collapsed">
+  <div class="brand">
+    <div class="brand-mark">SF</div>
+    <div class="brand-copy">
+      <strong>{{ brandName }}</strong>
+      <small>Retail Operations</small>
+    </div>
+    <button
+      mat-icon-button
+      type="button"
+      class="nav-toggle"
+      color="primary"
+      [attr.aria-label]="languageService.t(collapsed ? 'sidebar.expand' : 'sidebar.collapse')"
+      (click)="toggle.emit()"
+    >
+      <mat-icon>{{ collapsed ? 'menu' : 'menu_open' }}</mat-icon>
+    </button>
+  </div>
+
+  <div class="workspace-status">
+    <span class="status-dot"></span>
+    <div class="workspace-copy">
+      <strong>{{ languageService.t('sidebar.workspace') }}</strong>
+      <small>{{ languageService.t('sidebar.ready') }}</small>
+    </div>
+  </div>
+
+  <nav mat-nav-list [attr.aria-label]="languageService.t('navigation.title')">
+    <div mat-subheader class="nav-title">{{ languageService.t('navigation.title') }}</div>
+    <button
+      mat-list-item
+      class="nav-item"
+      type="button"
+      *ngFor="let item of navigationItems"
+      (click)="itemSelected.emit(item)"
+    >
+      <mat-icon matListItemIcon class="nav-icon">{{ item.icon }}</mat-icon>
+      <span matListItemTitle>{{ languageService.t(item.labelKey) }}</span>
+    </button>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="avatar">LK</div>
+    <div class="user-copy">
+      <strong>{{ languageService.t('sidebar.administrator') }}</strong>
+      <small>Administrator</small>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,31 @@
+.app-shell {
+  display: flex;
+  align-items: stretch;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  background: var(--color-canvas);
+}
+
+.shell-main {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.shell-content {
+  width: 100%;
+  flex: 1;
+}
+
+@media (max-width: 50rem) {
+  .app-shell {
+    display: block;
+    min-height: 100dvh;
+  }
+
+  .shell-main {
+    min-height: 0;
+  }
+}

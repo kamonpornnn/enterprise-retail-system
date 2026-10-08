@@ -16,7 +16,7 @@ $color-line: #e3ebf0;
 $color-surface: #ffffff;
 $color-canvas: #f5f8fa;
 
-$font-family-base: Inter, 'Noto Sans Thai', system-ui, sans-serif;
+$font-family-base: 'Noto Sans Thai', Inter, system-ui, sans-serif;
 $font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
 $font-size-xs: 0.6875rem;
 $font-size-sm: 0.8125rem;
@@ -63,7 +63,11 @@ $transition-base: 220ms ease;
   --color-placeholder: #{$color-placeholder};
   --color-line: #{$color-line};
   --color-surface: #{$color-surface};
+  --color-surface-raised: #{$color-surface};
   --color-canvas: #{$color-canvas};
+  --color-warning-soft: #fff6de;
+  --color-danger-soft: #fff0ed;
+  --color-info-soft: #eaf3ff;
 
   --font-family-base: #{$font-family-base};
   --font-family-mono: #{$font-family-mono};
@@ -96,4 +100,21 @@ $transition-base: 220ms ease;
 
   --transition-fast: #{$transition-fast};
   --transition-base: #{$transition-base};
+}
+
+:root.dark-mode {
+  --color-ink: #e6edf2;
+  --color-muted: #9aacb8;
+  --color-placeholder: #718492;
+  --color-line: #2c414e;
+  --color-surface: #142735;
+  --color-surface-raised: #1a3444;
+  --color-canvas: #0b1b29;
+  --color-primary-soft: #143e42;
+  --color-warning-soft: #44371b;
+  --color-danger-soft: #482724;
+  --color-info-soft: #1e3550;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.22);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.24);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.34);
 }

@@ -1,8 +1,9 @@
 <section class="empty-state" aria-live="polite">
-  <div class="empty-icon" aria-hidden="true">—</div>
+  <mat-icon class="empty-icon" aria-hidden="true">inventory_2</mat-icon>
   <h2>{{ title }}</h2>
   <p>{{ description }}</p>
-  <button class="secondary-action" type="button" *ngIf="actionLabel" (click)="actionClick.emit()">
+  <button mat-stroked-button color="primary" type="button" *ngIf="actionLabel" (click)="actionClick.emit()">
+    <mat-icon>add</mat-icon>
     {{ actionLabel }}
   </button>
 </section>
